@@ -1,7 +1,9 @@
 import React from 'react';
 import MyComponent from './MyComponent';
-import {mount} from 'enzyme';
+import {mount, shallow} from 'enzyme';
 import {jsdom} from 'jsdom';
+import assert from 'assert';
+import Image from './image.svg';
 
 const exposedProperties = ['window', 'navigator', 'document'];
 
@@ -18,4 +20,8 @@ global.navigator = {
   userAgent: 'node.js'
 };
 
-console.log(mount(<MyComponent/>));
+assert(mount(<MyComponent/>).find('.my-image').length === 1);
+
+assert(shallow(<MyComponent/>).find(Image).length === 1);
+
+console.log('All assertions complete');
