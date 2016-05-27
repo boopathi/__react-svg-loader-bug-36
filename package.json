@@ -6,7 +6,7 @@
   "scripts": {
     "build": "webpack --config webpack.config.js",
     "watch": "webpack --config webpack.config.js --watch",
-    "test": "node build/bundle.js"
+    "test": "mocha"
   },
   "keywords": [],
   "author": "",
