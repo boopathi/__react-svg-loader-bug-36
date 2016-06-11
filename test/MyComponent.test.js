@@ -11,9 +11,9 @@ global.window = doc.defaultView;
 global.navigator = doc.defaultView.navigator;
 
 describe('test MyComponent', () => {
-    it('should pass', () => {
-        const wrapper = mount(
-            <MyComponent />
-        );
-    });
+  it('should pass', () => {
+    const wrapper = mount(
+      <MyComponent />
+    );
+  });
 });
