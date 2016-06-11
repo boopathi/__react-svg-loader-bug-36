@@ -26,7 +26,22 @@ module.exports = {
       {
         test: /\.svg$/,
         exclude: /node_modules/,
-        loader: 'babel!react-svg'
+        loaders: ['babel','react-svg']
+      },
+      {
+        test: /\.css$/,
+        exclude: /node_modules/,
+        loaders: ['style','css']
+      },
+      {
+        test: /\.jpg$/,
+        exclude: /node_modules/,
+        loaders: ['file']
+      },
+      {
+        test: /\.png$/,
+        exclude: /node_modules/,
+        loaders: ['url']
       }
     ]
   }

@@ -1,10 +1,13 @@
 import React from 'react';
-import Image from './image.svg';
+import './style.css';
+import imageUrl from './image.jpg';
+import ImageIcon from './image.svg';
+import imageContent from './image.png';
 
 export default class MyComponent extends React.Component {
   render() {
     return <div>
-      <Image className="my-image" />
+      <ImageIcon className="my-image" />
     </div>
   }
 }
