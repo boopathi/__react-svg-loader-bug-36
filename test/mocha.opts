@@ -1,2 +1,2 @@
 --compilers js:babel-register
---require test/null-complier.js
+--require test/loadermock.js
